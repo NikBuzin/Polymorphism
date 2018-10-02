@@ -6,10 +6,10 @@ namespace BL
 {
     public class SecondClass : FirstClass
     {
-        public int _p;
-        public int _t;
+        public int _p { get; set; }
+        public int _t { get; set; }
 
-        public SecondClass(string name, int cost, int count, int p, int t) : base(name, cost, count)
+        public SecondClass(string name, int cost, int count, int p, int t) : base(name, cost, count) 
         {
             _p = p;
             _t = t;
@@ -17,8 +17,9 @@ namespace BL
 
         public override void Quality()
         {
-            _q = (int)(_q + 0.5 * (_t - _p));
             base.Quality();
+            _q = (int)(_q + 0.5 * (_t - _p));
+
         }
     }
 }

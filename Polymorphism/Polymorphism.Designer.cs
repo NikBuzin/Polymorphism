@@ -102,6 +102,7 @@
             this.But_Show_2.TabIndex = 6;
             this.But_Show_2.Text = "Show 2 class";
             this.But_Show_2.UseVisualStyleBackColor = true;
+            this.But_Show_2.Click += new System.EventHandler(this.But_Show_2_Click);
             // 
             // TB_Result
             // 
